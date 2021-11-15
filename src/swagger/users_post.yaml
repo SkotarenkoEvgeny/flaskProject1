@@ -1,0 +1,16 @@
+definitions:
+  message:
+    type: object
+    properties:
+      added_users:
+        type: integer
+        description: "count of added users"
+      users_in_db:
+        type: integer
+        description: "count of all users in db"
+responses:
+  200:
+    content:
+      application/json:
+        schema:
+          $ref: "#/definitions/message"

@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Flask = "*"
+Flask-RESTful = "*"
+Flask-SQLAlchemy = "*"
+Flask-Migrate = "*"
+requests = "*"
+flasgger = "*"
+flask-script = "*"
+pymysql = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

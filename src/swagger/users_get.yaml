@@ -1,0 +1,35 @@
+parameters:
+  - name: id
+    in: "path"
+    description: "ID of user"
+    type: "integer"
+    format: "int64"
+definitions:
+  user:
+    type: object
+    properties:
+      id:
+        type: string
+        description: "data of 'id' column"
+      gender:
+        type: string
+        description: "data of 'gender' column"
+      first_name:
+        type: string
+        description: "data of 'first_name' column"
+      last_name:
+        type: string
+        description: "data of 'last_name' column"
+      e_mail:
+        type: string
+        description: "data of 'e_mail' column"
+      born_date:
+        type: string
+        description: "data of 'born_date' column"
+
+responses:
+  200:
+    content:
+      application/json:
+        schema:
+          $ref: "#/definitions/user"

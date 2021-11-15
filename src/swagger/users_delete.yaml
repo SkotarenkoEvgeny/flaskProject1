@@ -1,0 +1,18 @@
+parameters:
+  - name: id
+    in: "path"
+    description: "ID of user"
+    type: "integer"
+    format: "int64"
+definitions:
+  message:
+    type: object
+    properties:
+      type: string
+      description: "user with id={user.id} successfully deleted"
+responses:
+  200:
+    content:
+      application/json:
+        schema:
+          $ref: "#/definitions/message"
